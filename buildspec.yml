@@ -11,3 +11,7 @@ phases:
   build:
     commands:
       - python train.py
+      - cd terraform
+      - terraform init
+      - terraform validate
+      - terraform apply -auto-approve
